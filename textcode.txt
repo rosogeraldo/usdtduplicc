@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="invest.css">
+    <title>Invesment</title>
+</head>
+<body>
+    
+
+    <center><div class="imagen1">
+        <div>
+            <center><h1>USDT DUPLICATOR (50%) </h1></center>
+            <img src="wallet.png"><br>
+                ENTER YOUR WALLET!<br><input type="text" required id="wallet" autofocus>
+        </div>
+            <div>
+                <img src="usdt.png"><br>
+                    YOUR INVESMENT AMOUNT!<b></b><br><input type="number" id="userinvest" 
+                    autofocus onblur=><br><br>
+            </div>
+                <div>
+                    <button onclick="validate()">Duplicate Now!</button><br><br>
+                    <a href="invesmentplan.html"><button>Reset!</button></a>
+                </div>
+        <p>YOU WILL RECEIVE: <span id="res1"></span></p>
+        <p>YOU JUST NEED TO DEPOSIT TO THIS WALLET: <span id="res2"></span></p>
+
+    </div></center>
+
+    <script src="invest.js"></script>
+</body>
+</html>
+==========================================================
+img {
+    width: 65px;
+    height: 50px;
+    margin: 5px;
+    
+    
+}
+.imagen1 {
+    background-color: rgb(157, 253, 133);
+    width: 480px;
+    height: 640px;
+    border-radius: 8px;
+
+}
+h1 {
+    background-color: rgb(185, 183, 183) ;
+    margin-top: -2px;
+}
+input {
+    width: 400px;
+    height: 25px;
+    background-color: rgb(219, 223, 217);
+}
+button {
+    background-color: rgb(0, 255, 0);
+    width: 120px;
+    height: 25px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+=================================================
+
+
+function validate(){
+    var userWallet, resAmount, cien, cincuenta, mywallet;
+    cien = 100, cincuenta = 50;
+    resAmount = document.getElementById('userinvest').value;
+    userWallet = document.getElementById('wallet').value;
+    var res0 = resAmount / cien * 50 + resAmount++; //agrega su mismo valor//
+    var rezin = document.getElementById('res1').innerHTML = res0 +' USDT TO YOUR WALLET '+ userWallet;
+    document.getElementById('res2').innerHTML =' (ijonnnnnniinibPPPLLDKDKDKbb) IN NO MORE THAN 24 HOURS, CONGRATULATON!!!';
+    
+    if(document.getElementById('userinvest').value ==''){
+        alert('Please Enter a Value');
+
+        if(document.getElementById('wallet').value == ''){
+            alert('Please Enter a Value');
+        }
+
+    }
+    }
+
+
+
+

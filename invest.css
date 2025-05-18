@@ -1,0 +1,41 @@
+.tr {
+    width: 60px;
+    height: 80px;
+    margin: 5px;
+    margin-top: -3px;
+    margin-bottom: -5px;
+
+}
+.imagen1 {
+    background-color: rgb(157, 253, 133);
+    width: 570px;
+    border-radius: 8px;
+
+}
+h1 {
+    background-color: rgb(183, 185, 183) ;
+    margin-top: -9px;
+    color: rgb(87, 243, 25);
+}
+input {
+    width: 400px;
+    height: 25px;
+    background-color: rgb(185, 183, 183) ;
+    margin-top: -3px;
+}
+button {
+    background-color: rgb(3, 252, 57);
+    width: 120px;
+    height: 25px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#imagen11 {
+    text-align: center;
+    width: 500px;
+    height: 383px;
+    margin-bottom: -150px;
+}
+html {
+    background-color: rgb(185, 183, 183) ;
+}
